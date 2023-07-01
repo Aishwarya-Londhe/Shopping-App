@@ -1,0 +1,12 @@
+.list-group-item{
+    width: 12rem;
+    margin: 1rem;
+}
+
+.form-control{
+    margin: 0 0.5rem;
+}
+
+img{
+    height: 150px;
+}

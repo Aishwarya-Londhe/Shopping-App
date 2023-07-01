@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-3">
+    <a class="list-group-item list-group-item-action text-center" aria-current="true">
+      <div>
+        <img class="img-fluid" [src]="prod.imgPath" [alt]="prod.imgPath">
+      </div>
+      <div>
+        <h3>{{prod.name}}</h3>
+        <p>{{prod.price}}</p>
+      </div>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary" type="button" (click)="decreaseQuantity()">-</button>
+        </div>
+        <input type="number" class="form-control text-center" [(ngModel)]="quantity">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" (click)="increaseQuantity()">+</button>
+        </div>
+      </div>
+
+      <a class="btn btn-light btn-block mt-2 btn-outline-secondary" (click)="addToBag()">Add to Bag</a>
+    </a>
+  </div>
+</div>

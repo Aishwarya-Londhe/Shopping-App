@@ -1,0 +1,17 @@
+<div class="shopping-form">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="prodName">Product Name</label>
+            <input type="text" class="form-control" id="prodName" formControlName="pName">
+        </div>
+        <div class="form-group">
+            <label for="prodImg">Product Image</label>
+            <input type="text" class="form-control" id="prodImg" formControlName="pImg">
+        </div>
+        <div class="form-group">
+            <label for="prodPrice">Product Price</label>
+            <input type="text" class="form-control" id="prodPrice" formControlName="pPrice">
+        </div>
+        <button class="btn btn-success" type="submit">Add Product</button>
+    </form>
+</div>
